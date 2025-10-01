@@ -16,55 +16,59 @@ import Screen5 from "../../assets/images/screen5.svg";
 const screens = [Screen1, Screen2, Screen3, Screen4];
 
 function AppScreensSlider() {
- const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "120px", // creates the "half slide" look
-    arrows: true,
-    responsive: [
-      {
-        breakpoint: 1280, // large screens
-        settings: {
-          slidesToShow: 4,
-          centerPadding: "80px",
-        },
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerMode: true,
+  centerPadding: "120px", // creates the "half slide" look
+  arrows: true,
+  autoplay: true,           // ✅ enable auto scroll
+  autoplaySpeed: 2000,      // ✅ 2.5 seconds per slide
+  pauseOnHover: true,       // ✅ stops when user hovers
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 4,
+        centerPadding: "80px",
       },
-      {
-        breakpoint: 1024, // tablets
-        settings: {
-          slidesToShow: 2,
-          centerPadding: "60px",
-        },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        centerPadding: "60px",
       },
-      {
-        breakpoint: 640, // mobile
-        settings: {
-          slidesToShow: 1,
-          centerPadding: "40px",
-        },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: "40px",
       },
-    ],
-  };
+    },
+  ],
+};
+
 
   return (
     <section className="py-16 bg-white font-myfont">
       <div className="max-w-6xl mx-auto px-4 text-left">
         <h2 className="md:text-3xl text-3xl font-myfont  leading-normal mb-10">
-          Get to Know Route my Claims.
+          Get to Know RouteMyClaims.
         </h2>
 
         <Slider {...settings}>
           {screens.map((screen, idx) => (
             <div key={idx} className="px-3">
-              <div className="flex justify-center">
+              <div className="flex justify-center cursor-pointer">
                 <img
                   src={screen}
                   alt={`App screen ${idx + 1}`}
-                  className="max-h-[500px] object-contain"
+                  className="max-h-[800px] object-contain"
                 />
               </div>
             </div>

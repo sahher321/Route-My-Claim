@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import checkImage from "../../assets/images/check.svg";
 import FacilityCheck from "../../assets/images/facilityCheck.svg";
+import FacilityUnCheck from "../../assets/images/facilityUnCheck.svg";
 
 
 const Pricing = () => {
@@ -52,7 +53,7 @@ const Pricing = () => {
     <section className="w-full bg-white py-12 font-myfont">
       <div className="max-w-6xl mx-auto text-center">
         {/* Header */}
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center flex-col lg:flex-row">
           <h2 className="text-3xl font-myfont  leading-normal ">
             Subscription Model
           </h2>
@@ -61,8 +62,8 @@ const Pricing = () => {
             <span
               className={`${
                 billingCycle === "monthly"
-                  ? "text-blue-600 font-semibold"
-                  : "text-gray-500"
+                  ? "text-blue-600 font-semibold text-lg"
+                  : "text-gray-500 text-lg"
               }`}
             >
               Monthly
@@ -76,7 +77,7 @@ const Pricing = () => {
               className="w-12 h-6 bg-gray-300 rounded-full flex items-center p-1 transition"
             >
               <span
-                className={`w-4 h-4 bg-white rounded-full shadow transform transition ${
+                className={`w-4 h-4 bg-white  rounded-full shadow transform transition ${
                   billingCycle === "annually" ? "translate-x-6" : ""
                 }`}
               />
@@ -84,8 +85,8 @@ const Pricing = () => {
             <span
               className={`${
                 billingCycle === "annually"
-                  ? "text-blue-600 font-semibold"
-                  : "text-gray-500"
+                  ? "text-blue-600 font-semibold text-lg"
+                  : "text-gray-500 text-lg"
               }`}
             >
               Annually
@@ -94,24 +95,25 @@ const Pricing = () => {
         </div>
 
         {/* Benefits - stacked vertically */}
-        <div className="mt-4 text-gray-700 text-sm flex flex-col items-start space-y-2">
-          <p className="flex items-center gap-2  font-myfont ">
-            <span >
+        <div className="mt-4 text-gray-700 text-sm flex flex-col items-start lg:space-y-2 space-y-1">
+          <p className="flex lg:items-center gap-2 text-[#787878]  font-myfont lg:text-lg">
+            <span>
               <img src={checkImage} />
             </span>{" "}
-            Yearly plans include a discount (
-            <span className="text-green-600  font-myfont ">2 months free</span>)
+            Yearly plans include a discount 
+            {/* (
+            <span className="text-green-600  font-myfont ">2 months free</span>) */}
           </p>
 
-          <p className="flex items-center gap-2  font-myfont ">
-            <span >
+  <p className="flex lg:items-center gap-2 text-[#787878]  font-myfont lg:text-lg">
+                <span>
               <img src={checkImage} />
             </span>{" "}
-            Users can upgrade or downgrade plans at any time
+            Users can upgrade or plans at any time
           </p>
 
-          <p className="flex items-center gap-2  font-myfont ">
-            <span >
+  <p className="flex lg:items-center gap-2 text-[#787878]  font-myfont lg:text-lg">
+                <span>
               <img src={checkImage} />
             </span>{" "}
             In-app purchase management is supported
@@ -123,7 +125,7 @@ const Pricing = () => {
           {plans.map((plan, idx) => (
             <div
               key={idx}
-              className={`group p-6 rounded-2xl border border-gray-200 hover:border-blue-500 hover:shadow-lg transition flex flex-col h-full`}
+              className={`group p-6 rounded-3xl border border-gray-200 hover:border-blue-500 hover:shadow-lg transition flex flex-col h-full`}
             >
               <div className="flex-grow">
                 <h3 className="text-start font-semibold text-3xl">
@@ -131,12 +133,11 @@ const Pricing = () => {
                 </h3>
 
                 <p
-                className={`text-5xl font-bold mt-3 text-start  font-myfont  ${
-  plan.special
-    ? "text-[#787878] group-hover:bg-gradient-to-r  font-myfont  group-hover:from-green-500 group-hover:to-blue-700 group-hover:bg-clip-text group-hover:text-transparent"
-    : ""
-}`}
-
+                  className={`text-5xl font-bold mt-3 text-start  font-myfont  ${
+                    plan.special
+                      ? "text-[#787878] group-hover:bg-gradient-to-r  font-myfont  group-hover:from-green-500 group-hover:to-blue-700 group-hover:bg-clip-text group-hover:text-transparent"
+                      : ""
+                  }`}
                 >
                   ${plan.price[billingCycle].toFixed(2)}
                   <span className="text-sm font-normal  font-myfont  text-black">
@@ -145,7 +146,7 @@ const Pricing = () => {
                 </p>
                 <hr class="border-[#E1E4ED] my-4"></hr>
 
-                <p className="text-gray-500 text-sm mt-2">
+                <p className="text-[#787878] text-md mt-2">
                   Claims Limit: {plan.claims}
                 </p>
 
@@ -156,16 +157,34 @@ const Pricing = () => {
                 )} */}
 
                 {/* Features */}
-                <ul className="mt-4 text-left text-sm text-gray-600 space-y-2">
-                  {plan.features.map((feature, i) => (
-                    <li key={i} className="flex justify-start  font-myfont  gap-2 items-Start" ><img src={FacilityCheck} alt="✔" /> {feature}</li>
-                  ))}
-                </ul>
+                <ul className="mt-4 text-left text-md text-[#787878] space-y-2">
+  {plan.features.map((feature, i) => (
+    <li
+      key={i}
+      className="flex justify-start items-start gap-2 text-lg font-myfont relative"
+    >
+      {/* Default Icon */}
+      <img
+        src={FacilityUnCheck}
+        alt="✔"
+        className="block group-hover:hidden"
+      />
+      {/* Hover Icon */}
+      <img
+        src={FacilityCheck}
+        alt="✔"
+        className="hidden group-hover:block"
+      />
+      {feature}
+    </li>
+  ))}
+</ul>
+
               </div>
 
               {/* Button aligned bottom */}
               <button
-                className={`${plan.buttonColor} font-myfont  text-white font-medium py-4 px-12 md:py-2 md:px-5 rounded-3xl transition mt-6`}
+                className={`${plan.buttonColor} flex items-center justify-center text-[18px] min-h-[56px] min-w-[216px] font-myfont text-white font-medium rounded-full transition mt-6`}
               >
                 Get Started
               </button>

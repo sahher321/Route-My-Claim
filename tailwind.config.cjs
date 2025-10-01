@@ -12,7 +12,16 @@ module.exports = {
         fontFamily: {
         myfont: ["MyFont", "sora"],
       },
+      wordSpacing: {
+        wider: '0.25rem',
+        widest: '0.5rem',
+      },
     },
   },
-  plugins: [],
+  plugins: [function ({ addUtilities }) {
+      addUtilities({
+        '.word-spacing-wide': { wordSpacing: '0.25rem' },
+        '.word-spacing-wider': { wordSpacing: '0.5rem' },
+      });
+    },],
 }

@@ -28,7 +28,7 @@ function Features() {
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-gray-900 text-3xl font-myfont  leading-normal  text-center mb-5">
-          Route My Claims Features
+          RouteMyClaims Features
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
@@ -39,14 +39,14 @@ function Features() {
             >
               {/* Icon */}
               <div className="">
-                <img src={feature.icon} alt={feature.title} className="w-14 h-14" />
+                <img src={feature.icon} alt={feature.title} className="w-18 h-18" />
               </div>
 
               {/* Title + Description */}
-              <h3 className="text-lg font-semibold text-gray-900 mt-2">
+              <h3 className="text-xl font-semibold text-gray-900 mt-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-10">
+              <p className="text-[#787878] text-lg leading-relaxed mb-10">
                 {feature.desc}
               </p>
 
