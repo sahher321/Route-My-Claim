@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Basic plan",
+    "price": "19.99",
+    "claimLimit": "Up to 50 claims per month",
+    "features": {
+      "title": "Features",
+      "items": [
+        "Manual entry of ZIP codes or full addresses",
+        "Optimized map displaying route lines with inspection order numbers",
+        "Output: Spreadsheet-style table showing inspection order, city, and address"
+      ]
+    },
+    "isHighlighted": false
+  },
+  {
+    "name": "Standard Plan",
+    "price": "39.99",
+    "claimLimit": "Up to 100 claims per month",
+    "features": {
+      "title": "Includes all Basic Plan features, plus:",
+      "items": [
+        "Prompts for starting and ending location",
+        "Displays distance between each inspection"
+      ]
+    },
+    "isHighlighted": false
+  },
+  {
+    "name": "Pro Plan",
+    "price": "59.99",
+    "claimLimit": "Up to 200 claims per month",
+    "trial": "Free Trial: 14 days",
+    "features": {
+      "title": "Includes all Standard Plan features, plus:",
+      "items": [
+        "OCR Uploads: Users can upload photos or spreadsheets with claim data"
+      ]
+    },
+    "isHighlighted": false
+  }
+]
