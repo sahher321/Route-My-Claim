@@ -11,7 +11,11 @@ import Screen1 from "../../assets/images/screen1.svg";
 import Screen2 from "../../assets/images/screen2.svg";
 import Screen3 from "../../assets/images/screen3.svg";
 import Screen4 from "../../assets/images/screen4.svg";
-import Screen5 from "../../assets/images/screen5.svg";
+// import Screen5 from "../../assets/images/screen5.svg";
+import Screen6 from "../../assets/images/screen6.svg";
+import Screen7 from "../../assets/images/screen7.svg";
+
+
 
 const screens = [Screen1, Screen2, Screen3, Screen4];
 
@@ -22,58 +26,55 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
-  centerMode: true,
-  centerPadding: "120px", // creates the "half slide" look
+  centerMode: false,
   arrows: true,
-  autoplay: true,           // ✅ enable auto scroll
-  autoplaySpeed: 2000,      // ✅ 2.5 seconds per slide
-  pauseOnHover: true,       // ✅ stops when user hovers
+  autoplay: true,
+  autoplaySpeed: 2000,
+  pauseOnHover: true,
+  variableWidth: true, // ✅ keep for desktop
   responsive: [
-    {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 4,
-        centerPadding: "80px",
-      },
-    },
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
-        centerPadding: "60px",
+        variableWidth: false, // ❌ disable variable width on smaller screens
       },
     },
     {
       breakpoint: 640,
       settings: {
         slidesToShow: 1,
-        centerPadding: "40px",
+        variableWidth: false, // ❌ disable variable width
       },
     },
   ],
 };
 
 
-  return (
-    <section className="py-16 bg-white font-myfont">
-      <div className="max-w-6xl mx-auto px-4 text-left">
-        <h2 className="md:text-3xl text-3xl font-myfont  leading-normal mb-10">
-          Get to Know RouteMyClaims.
-        </h2>
 
-        <Slider {...settings}>
-          {screens.map((screen, idx) => (
-            <div key={idx} className="px-3">
-              <div className="flex justify-center cursor-pointer">
-                <img
-                  src={screen}
-                  alt={`App screen ${idx + 1}`}
-                  className="max-h-[800px] object-contain"
-                />
-              </div>
-            </div>
-          ))}
-        </Slider>
+  return (
+   <section className="py-16 bg-white font-myfont">
+      <div className="max-w-[1550px] ml-auto px-4 text-left">
+        <h2 className="md:text-3xl text-3xl font-myfont font-medium leading-normal  mb-10">
+          Get to Know RouteMyClaims
+        </h2>
+<div className="slider-wrapper overflow-hidden">
+  <Slider {...settings}>
+  {screens.map((screen, idx) => (
+  <div key={idx} className="px-2">
+    <div className="flex justify-center cursor-pointer">
+      <img
+        src={screen}
+        alt={`App screen ${idx + 1}`}
+        className="max-h-[800px] object-contain"
+      />
+    </div>
+  </div>
+))}
+
+  </Slider>
+</div>
+
       </div>
     </section>
   );

@@ -1,24 +1,24 @@
-import React from 'react'
+import React from "react";
 
 function Cta() {
   return (
-      <section className="py-16 bg-white font-myfont">
+    <section className="py-16 bg-white font-myfont" data-aos="fade-right">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-        
         {/* Left Side */}
         <div>
           <h2 className="text-3xl font-myfont  leading-normal md:text-4xl  text-gray-900 mb-4">
             Let us know <br /> what you think!
           </h2>
           <p className="text-[#787878]  mb-6 text-lg">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit   
+            Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit
             phasellus mollis sit aliquam sit nullam.
           </p>
           <p className=" text-[#787878] text-lg">
             Copyright © 2025{" "}
             <a href="#" className="text-teal-500 ">
               RouteMyClaims.
-            </a><br></br>
+            </a>
+            <br></br>
             All rights reserved.
           </p>
         </div>
@@ -82,17 +82,16 @@ function Cta() {
             />
           </div>
 
-        <button
-  type="submit"
-  className="flex items-center rounded-full justify-center w-full md:w-auto min-h-[56px] min-w-[216px] text-[18px] font-myfont text-white font-normal bg-gradient-to-r from-green-400 to-blue-600 hover:from-green-500 hover:to-blue-700 transition-colors"
->
-  SUBMIT
-</button>
-
+          <button
+            type="submit"
+            className="flex items-center rounded-full justify-center w-full md:w-auto min-h-[56px] min-w-[216px] text-[18px] font-myfont text-white font-normal bg-gradient-to-r from-green-400 to-blue-600 hover:from-green-500 hover:to-blue-700 transition-colors"
+          >
+            SUBMIT
+          </button>
         </form>
       </div>
     </section>
-  )
+  );
 }
 
-export default Cta
+export default Cta;

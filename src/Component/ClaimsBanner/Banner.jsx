@@ -1,37 +1,60 @@
 import React from "react";
 import Phone from "../../assets/images/Banner_mobile_image.svg";
+import { TypeAnimation } from "react-type-animation";
+import { FaMapMarkerAlt } from "react-icons/fa"; // location icon
+
 
 function Banner() {
   return (
-    <section class="bg-gradient-to-bl from-green-400 to-blue-600 lg:rounded-[3rem] ">
+     <section className=" bg-gradient-to-bl from-green-400 to-blue-600 lg:rounded-[3rem] ">
+      {/* Background Location Icon */}
+      <FaMapMarkerAlt
+        className="absolute top-6 right-6 text-white opacity-20 text-7xl pointer-events-none"
+      />
       <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-[16rem] lg:grid-cols-12">
         <div class="hidden lg:mt-0 lg:col-span-6 lg:flex">
           <img
             src={Phone}
             alt="mockup"
+            className="animate-float"
             style={{
-              width: "81.25rem", // instead of 81.25rem
+              width: "81.25rem",
               position: "absolute",
-              top: "6rem", // instead of 6rem
-              left: "2.5rem", // instead of 2.5rem
+              top: "6rem",
+              left: "2.5rem",
             }}
           />
         </div>
-        <div class="mr-auto place-self-center lg:col-span-6 lg:px-10">
-         <h1
-  className="
-    max-w-2xl text-white mb-4 text-4xl font-myfont font-semibold 
+        <div
+          class="mr-auto place-self-center lg:col-span-6 lg:px-10 "
+          data-aos="fade-left"
+        >
+          <h1
+            className="
+    max-w-2xl text-white mb-4 text-4xl font-myfont font-medium 
     md:text-5xl xl:text-6xl
     lg:tracking-wide lg:leading-loose lg:[word-spacing:0.2rem]
   "
->
-  Simplify Your Claims Routing
-</h1>
-
-
-          <p class="max-w-2xl mb-6  text-white lg:mb-8 md:text-lg lg:text-xl font-myfont ">
-            Streamline the handling of claims with our intuitive, all-in-one
-            platform.
+          >
+            Simplify Your Claims Routing
+          </h1>
+          <p
+            className="max-w-2xl mb-6 text-white lg:mb-8 md:text-lg lg:text-xl font-myfont"
+            style={{ minHeight: "3rem", display: "flex", alignItems: "center" }} // ✅ fix height
+          >
+            <TypeAnimation
+              sequence={[
+                "Streamline the handling of claims with our intuitive platform.",
+                2000,
+                "Manage claims faster and smarter with our all-in-one solution.",
+                2000,
+                "Simplify workflows and reduce hassle in every claim process.",
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </p>
 
           <a

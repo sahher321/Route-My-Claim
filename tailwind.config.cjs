@@ -16,6 +16,15 @@ module.exports = {
         wider: '0.25rem',
         widest: '0.5rem',
       },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" }, // adjust how high it floats
+        },
+      },
+      animation: {
+        float: "float 3s ease-in-out infinite", // 3s loop
+      },
     },
   },
   plugins: [function ({ addUtilities }) {

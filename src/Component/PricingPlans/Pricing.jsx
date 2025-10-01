@@ -50,11 +50,11 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-12 font-myfont">
+    <section className="w-full bg-white py-12 font-myfont" data-aos="fade-left">
       <div className="max-w-6xl mx-auto text-center">
         {/* Header */}
         <div className="flex justify-between items-center flex-col lg:flex-row">
-          <h2 className="text-3xl font-myfont  leading-normal ">
+          <h2 className="text-3xl font-myfont font-medium  leading-normal ">
             Subscription Model
           </h2>
           {/* Billing Toggle */}

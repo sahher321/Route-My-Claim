@@ -3,11 +3,11 @@ import aboutImage from "../../assets/images/about_image.svg";
 
 function About() {
   return (
-    <section class="pt-[3rem] lg:pt-[16rem] pb-[3rem] relative font-myfont ">
+    <section class="pt-[3rem] lg:pt-[17rem] pb-[3rem] relative font-myfont " data-aos="fade-right">
       <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
           <div class="w-full flex-col justify-start items-start inline-flex">
-            <h2 class="text-3xl font-myfont  leading-normal text-start mb-5">
+            <h2 class="text-3xl font-myfont font-semibold leading-normal text-start mb-5">
               About Us 
             </h2>
             <div class="w-full flex flex-col justify-start lg:items-start items-center gap-6">

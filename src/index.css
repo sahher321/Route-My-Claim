@@ -7,10 +7,25 @@
   margin: 0px;
   padding: 0px;
   /* font-family: "Inter", sans-serif; */
+  /* overflow-x: hidden; */
 }
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
+.slider-wrapper {
+  /* overflow: hidden; */
+  padding-right: 60px; /* makes space for the half slide */
+}
+.slider-wrapper .slick-track {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
+
+
 
 
 @font-face {
