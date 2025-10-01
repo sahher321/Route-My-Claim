@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import checkImage from "../../assets/images/check.svg";
-import FacilityCheck from "../../assets/images/facility_check.svg";
+import FacilityCheck from "../../assets/images/facilityCheck.svg";
 
 
 const Pricing = () => {
