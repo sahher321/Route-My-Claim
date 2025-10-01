@@ -6,11 +6,7 @@ import { FaMapMarkerAlt } from "react-icons/fa"; // location icon
 
 function Banner() {
   return (
-     <section className=" bg-gradient-to-bl from-green-400 to-blue-600 lg:rounded-[3rem] ">
-      {/* Background Location Icon */}
-      <FaMapMarkerAlt
-        className="absolute top-6 right-6 text-white opacity-20 text-7xl pointer-events-none"
-      />
+    <section class="bg-gradient-to-bl from-green-400 to-blue-600 lg:rounded-[3rem] ">
       <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-[16rem] lg:grid-cols-12">
         <div class="hidden lg:mt-0 lg:col-span-6 lg:flex">
           <img

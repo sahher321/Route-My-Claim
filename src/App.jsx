@@ -25,6 +25,7 @@ const App = () => {
         element={
           <div className="font-MyFont h-full">
             <Header />
+            <div className="overflow-x-hidden">
             <section id="home"><Banner /></section>
             <section id="about"><About /></section>
             <section id="features"><Features /></section>
@@ -32,6 +33,7 @@ const App = () => {
             <section id="showcase"><Showcase /></section> 
             <section id="screens"><AppScreensSlider /></section>
             <section id="cta"><Cta /></section>
+            </div>
           </div>
         }
       />
