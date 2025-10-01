@@ -21,7 +21,6 @@ const App = () => {
   <Showcase/>
   <AppScreensSlider/>
   <Cta/>
-  
   </div>
   )
 };
