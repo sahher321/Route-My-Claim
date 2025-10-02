@@ -13,7 +13,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const App = () => {
-
   useEffect(() => {
     AOS.init({ duration: 1500 });
   }, []);
@@ -26,13 +25,32 @@ const App = () => {
           <div className="font-MyFont h-full">
             <Header />
             <div className="overflow-x-hidden">
-            <section id="home"><Banner /></section>
-            <section id="about"><About /></section>
-            <section id="features"><Features /></section>
-            <section id="pricing"><PricingPlans /></section>
-            <section id="showcase"><Showcase /></section> 
-            <section id="screens"><AppScreensSlider /></section>
-            <section id="cta"><Cta /></section>
+              <section id="home">
+                <Banner />
+              </section>
+              <section id="about">
+                <About />
+              </section>
+              <section id="features">
+                <Features />
+              </section>
+              <section id="pricing">
+                <PricingPlans />
+              </section>
+              <section id="showcase">
+                <Showcase />
+              </section>
+              <div className="max-w-6xl mx-auto ">
+                <h2 className="md:text-3xl text-3xl font-myfont font-medium leading-normal">
+                  Get to Know RouteMyClaims
+                </h2>
+              </div>
+              <section id="screens">
+                <AppScreensSlider />
+              </section>
+              <section id="cta">
+                <Cta />
+              </section>
             </div>
           </div>
         }

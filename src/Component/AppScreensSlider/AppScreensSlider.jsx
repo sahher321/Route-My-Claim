@@ -54,10 +54,8 @@ const settings = {
 
   return (
    <section className="py-16 bg-white font-myfont">
-      <div className="max-w-[1550px] ml-auto px-4 text-left">
-        <h2 className="md:text-3xl text-3xl font-myfont font-medium leading-normal  mb-10">
-          Get to Know RouteMyClaims
-        </h2>
+      <div className="lg:max-w-[1550px]  ml-auto px-4 text-left">
+       
 <div className="slider-wrapper overflow-hidden">
   <Slider {...settings}>
   {screens.map((screen, idx) => (

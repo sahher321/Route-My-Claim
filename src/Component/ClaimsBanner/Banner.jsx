@@ -55,7 +55,7 @@ function Banner() {
 
           <a
             href="#"
-            className="inline-flex font-myfont cursor-pointer bg-white items-center justify-center rounded-3xl px-12 py-3 text-base text-center text-blue-600 border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 transition"
+            className="inline-flex font-myfont cursor-pointer bg-white items-center justify-center rounded-3xl px-12 py-3 text-base text-center text-blue-600 border border-white transition"
           >
             Get Started Free
           </a>

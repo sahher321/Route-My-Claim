@@ -3,7 +3,6 @@ import checkImage from "../../assets/images/check.svg";
 import FacilityCheck from "../../assets/images/facilityCheck.svg";
 import FacilityUnCheck from "../../assets/images/facilityUnCheck.svg";
 
-
 const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState("monthly");
 
@@ -100,20 +99,20 @@ const Pricing = () => {
             <span>
               <img src={checkImage} />
             </span>{" "}
-            Yearly plans include a discount 
+            Yearly plans include a discount
             {/* (
             <span className="text-green-600  font-myfont ">2 months free</span>) */}
           </p>
 
-  <p className="flex lg:items-center gap-2 text-[#787878]  font-myfont lg:text-lg">
-                <span>
+          <p className="flex lg:items-center gap-2 text-[#787878]  font-myfont lg:text-lg">
+            <span>
               <img src={checkImage} />
             </span>{" "}
             Users can upgrade or plans at any time
           </p>
 
-  <p className="flex lg:items-center gap-2 text-[#787878]  font-myfont lg:text-lg">
-                <span>
+          <p className="flex lg:items-center gap-2 text-[#787878]  font-myfont lg:text-lg">
+            <span>
               <img src={checkImage} />
             </span>{" "}
             In-app purchase management is supported
@@ -158,28 +157,27 @@ const Pricing = () => {
 
                 {/* Features */}
                 <ul className="mt-4 text-left text-md text-[#787878] space-y-2">
-  {plan.features.map((feature, i) => (
-    <li
-      key={i}
-      className="flex justify-start items-start gap-2 text-lg font-myfont relative"
-    >
-      {/* Default Icon */}
-      <img
-        src={FacilityUnCheck}
-        alt="✔"
-        className="block group-hover:hidden"
-      />
-      {/* Hover Icon */}
-      <img
-        src={FacilityCheck}
-        alt="✔"
-        className="hidden group-hover:block"
-      />
-      {feature}
-    </li>
-  ))}
-</ul>
-
+                  {plan.features.map((feature, i) => (
+                    <li
+                      key={i}
+                      className="flex justify-start items-start gap-2 text-lg font-myfont relative"
+                    >
+                      {/* Default Icon */}
+                      <img
+                        src={FacilityUnCheck}
+                        alt="✔"
+                        className="block group-hover:hidden"
+                      />
+                      {/* Hover Icon */}
+                      <img
+                        src={FacilityCheck}
+                        alt="✔"
+                        className="hidden group-hover:block"
+                      />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* Button aligned bottom */}

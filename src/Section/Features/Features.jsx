@@ -1,9 +1,9 @@
 // src/components/FeaturesSection.jsx
 import React from "react";
-import UploadIcon from "../../assets/images/gallery.svg"; 
-import ScheduleIcon from "../../assets/images/Doc.svg"; 
-import CalendarIcon from "../../assets/images/calendar.svg"; 
-import ArrowIcon from "../../assets/images/Right_arrow.svg"; 
+import UploadIcon from "../../assets/images/gallery.svg";
+import ScheduleIcon from "../../assets/images/Doc.svg";
+import CalendarIcon from "../../assets/images/calendar.svg";
+import ArrowIcon from "../../assets/images/Right_arrow.svg";
 
 const features = [
   {
@@ -27,7 +27,7 @@ function Features() {
   return (
     <section className="py-16 bg-white" data-aos="zoom-in">
       <div className="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-gray-900 text-3xl font-myfont font-medium leading-normal   text-center mb-5">
+        <h2 class="text-gray-900 text-3xl font-myfont font-medium leading-normal   text-center mb-5">
           RouteMyClaims Features
         </h2>
 
@@ -35,11 +35,16 @@ function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
- className={`cursor-pointer relative bg-gradient-to-b from-white to-gray-100 rounded-xl shadow-sm py-4 px-8 flex flex-col text-left 
-              transition-transform duration-300 hover:scale-105 hover:shadow-lg`}            >
+              className={`cursor-pointer relative bg-gradient-to-b from-white to-gray-100 rounded-xl shadow-sm py-4 px-8 flex flex-col text-left 
+              transition-transform duration-300 hover:scale-105 hover:shadow-lg`}
+            >
               {/* Icon */}
               <div className="">
-                <img src={feature.icon} alt={feature.title} className="w-18 h-18" />
+                <img
+                  src={feature.icon}
+                  alt={feature.title}
+                  className="w-18 h-18"
+                />
               </div>
 
               {/* Title + Description */}
@@ -59,7 +64,7 @@ function Features() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Features;
