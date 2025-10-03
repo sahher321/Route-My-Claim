@@ -22,7 +22,7 @@ function Banner() {
           />
         </div>
         <div
-          class="mr-auto place-self-center lg:col-span-6 lg:px-10 "
+          class="mr-auto place-self-center lg:col-span-6 lg:px-10 xl:ml-10"
           data-aos="fade-left"
         >
           <h1
@@ -30,6 +30,7 @@ function Banner() {
     max-w-2xl text-white mb-4 text-4xl font-myfont font-medium 
     md:text-5xl xl:text-6xl
     lg:tracking-wide lg:leading-loose lg:[word-spacing:0.2rem]
+    
   "
           >
             Simplify Your Claims Routing

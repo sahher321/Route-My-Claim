@@ -82,7 +82,7 @@ const Header = () => {
                   to={`#${id}`}
                   onClick={() => {
                     setActiveSection(id);
-                    setManualActive(id); // 👈 freeze scroll updates briefly
+                    setManualActive(id); // freeze scroll updates briefly
                     setIsOpen(false);
                   }}
                   className={`block py-2 px-3 text-[18px] font-myfont md:p-0 rounded-sm transition-colors ${
