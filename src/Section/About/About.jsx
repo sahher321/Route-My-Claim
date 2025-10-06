@@ -8,7 +8,7 @@ function About() {
         <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
           <div class="w-full flex-col justify-start items-start inline-flex">
             <h2 class="text-3xl font-myfont font-semibold leading-normal text-start mb-5">
-              About Us 
+              About RouteMyClaims
             </h2>
             <div class="w-full flex flex-col justify-start lg:items-start items-center gap-6">
               <p class="text-[#787878] text-lg font-normal leading-relaxed text-start ">
