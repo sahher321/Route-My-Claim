@@ -28,7 +28,7 @@ function Features() {
     <section className="py-16 bg-white" data-aos="zoom-in">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 class="text-gray-900 text-3xl font-myfont font-medium leading-normal   text-center mb-5">
-          RouteMyClaims Features
+          RouteMyClaim Features
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">

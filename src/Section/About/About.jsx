@@ -8,11 +8,11 @@ function About() {
         <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
           <div class="w-full flex-col justify-start items-start inline-flex">
             <h2 class="text-3xl font-myfont font-semibold leading-normal text-start mb-5">
-              About RouteMyClaims
+              About RouteMyClaim
             </h2>
             <div class="w-full flex flex-col justify-start lg:items-start items-center gap-6">
               <p class="text-[#787878] text-lg font-normal leading-relaxed text-start ">
-                At RouteMyClaims, we understand that your time is your most
+                At RouteMyClaim, we understand that your time is your most
                 valuable asset. Our platform was created by claims professionals
                 who know firsthand the challenges of juggling inspections,
                 paperwork, and travel.
@@ -20,7 +20,7 @@ function About() {
               <p class="text-[#787878] text-lg  font-normal leading-relaxed text-start">
                 We help you reclaim your day by simplifying scheduling,
                 streamlining claim management, and cutting down wasted miles.
-                With RouteMyClaims, every appointment is organized, every route
+                With RouteMyClaim, every appointment is organized, every route
                 is efficient, and every day is more productive.
               </p>
               <p class="text-[#787878] text-lg  font-normal leading-relaxed text-start">
@@ -31,7 +31,7 @@ function About() {
               </p>
               <p class="text-[#787878] text-lg  font-normal leading-relaxed text-start">
                 Combining smart scheduling with organized workflows,
-                RouteMyClaims makes your workdays predictable, profitable, and
+                RouteMyClaim makes your workdays predictable, profitable, and
                 stress-free.
               </p>
             </div>

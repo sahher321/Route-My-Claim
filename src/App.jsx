@@ -42,7 +42,7 @@ const App = () => {
               </section>
               <div className="max-w-6xl mx-auto ">
                 <h2 className="md:text-3xl text-3xl font-myfont font-medium leading-normal">
-                  Get to Know RouteMyClaims
+                  Get to Know RouteMyClaim
                 </h2>
               </div>
               <section id="screens">
