@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const App = () => {
+  
   useEffect(() => {
     AOS.init({ duration: 1500 });
   }, []);

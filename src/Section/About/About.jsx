@@ -3,7 +3,10 @@ import aboutImage from "../../assets/images/about_image.svg";
 
 function About() {
   return (
-    <section class="pt-[3rem] lg:pt-[17rem] pb-[3rem] relative font-myfont " data-aos="fade-right">
+    <section
+      class="pt-[3rem] lg:pt-[17rem] pb-[3rem] relative font-myfont "
+      data-aos="fade-right"
+    >
       <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
           <div class="w-full flex-col justify-start items-start inline-flex">
@@ -36,14 +39,13 @@ function About() {
               </p>
             </div>
           </div>
-        <img
-  className="lg:mx-0 mx-auto h-full rounded-3xl object-contain 
+          <img
+            className="lg:mx-0 mx-auto h-full rounded-3xl object-contain 
              w-full max-w-[90%] 
              lg:w-[700px] lg:h-[500px]"
-  src={aboutImage}
-  alt="about Us image"
-/>
-
+            src={aboutImage}
+            alt="about Us image"
+          />
         </div>
       </div>
     </section>

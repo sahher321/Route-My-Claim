@@ -1,7 +1,7 @@
 // src/main.jsx
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter } from "react-router-dom"; // ✅ now will work
+import { HashRouter } from "react-router-dom"; // now will work
 import './index.css';
 import App from "./App";
 

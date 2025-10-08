@@ -1,8 +1,7 @@
 import React from "react";
 import Phone from "../../assets/images/Banner_mobile_image.svg";
 import { TypeAnimation } from "react-type-animation";
-import { FaMapMarkerAlt } from "react-icons/fa"; // location icon
-
+import bg_image from "../../assets/images/bg_Color.svg";
 
 function Banner() {
   return (
@@ -27,17 +26,16 @@ function Banner() {
         >
           <h1
             className="
-    max-w-2xl text-white mb-4 text-4xl font-myfont font-medium 
-    md:text-5xl xl:text-6xl
-    lg:tracking-wide lg:leading-loose lg:[word-spacing:0.2rem]
-    
-  "
+              max-w-2xl text-white mb-4 text-4xl font-myfont font-medium 
+              md:text-5xl xl:text-6xl
+              lg:tracking-wide lg:leading-loose lg:[word-spacing:0.2rem]
+              "
           >
             Simplify Your Claims Routing
           </h1>
           <p
             className="max-w-2xl mb-6 text-white lg:mb-8 md:text-lg lg:text-xl font-myfont"
-            style={{ minHeight: "3rem", display: "flex", alignItems: "center" }} // ✅ fix height
+            style={{ minHeight: "3rem", display: "flex", alignItems: "center" }} // fix height
           >
             <TypeAnimation
               sequence={[

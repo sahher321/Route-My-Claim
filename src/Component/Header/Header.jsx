@@ -7,7 +7,7 @@ import Logo from "../../assets/images/horizontal-logo-2.svg";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const [manualActive, setManualActive] = useState(null); // 👈 new state
+  const [manualActive, setManualActive] = useState(null); //  new state
 
   // Detect active section on scroll
   useEffect(() => {
@@ -103,7 +103,7 @@ const Header = () => {
                 to="#cta"
                 onClick={() => {
                   setActiveSection("cta");
-                  setManualActive("cta"); // 👈 freeze scroll updates briefly
+                  setManualActive("cta"); // freeze scroll updates briefly
                   setIsOpen(false);
                 }}
                 className={`flex items-center justify-center text-[18px] min-h-[56px] min-w-[216px] text-center rounded-full transition-colors ${
