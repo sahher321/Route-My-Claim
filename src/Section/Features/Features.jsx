@@ -27,7 +27,7 @@ function Features() {
   return (
     <section className="py-16 bg-white" data-aos="zoom-in">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 class="text-gray-900 text-3xl font-myfont font-medium leading-normal   text-center mb-5">
+        <h2 class="text-gray-900 text-3xl font-myfont font-medium leading-normal text-center mb-5">
           RouteMyClaim Features
         </h2>
 
@@ -56,7 +56,7 @@ function Features() {
               </p>
 
               {/* Arrow Button */}
-              <div className="absolute bottom-4 right-4 w-9 h-9 flex items-center justify-center rounded-full bg-white ">
+              <div className="absolute bottom-4 right-4 w-9 h-9 flex items-center justify-center rounded-full bg-white">
                 <img src={ArrowIcon} alt="arrow" className="w-4 h-4" />
               </div>
             </div>

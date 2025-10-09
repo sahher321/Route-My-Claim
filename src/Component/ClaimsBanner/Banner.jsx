@@ -5,9 +5,21 @@ import bg_image from "../../assets/images/bg_Color.svg";
 
 function Banner() {
   return (
-    <section class="bg-gradient-to-bl from-green-400 to-blue-600 lg:rounded-[3rem] ">
-      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-[16rem] lg:grid-cols-12">
-        <div class="hidden lg:mt-0 lg:col-span-6 lg:flex">
+    <section
+      className="
+        bg-gradient-to-bl from-green-400 to-blue-600 
+        lg:bg-none lg:rounded-[3rem]
+      "
+      style={{
+        backgroundImage: `url(${bg_image})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-[16rem] lg:grid-cols-12">
+        {/* Left image */}
+        <div className="hidden lg:mt-0 lg:col-span-6 lg:flex">
           <img
             src={Phone}
             alt="mockup"
@@ -20,8 +32,10 @@ function Banner() {
             }}
           />
         </div>
+
+        {/* Right content */}
         <div
-          class="mr-auto place-self-center lg:col-span-6 lg:px-10 xl:ml-10"
+          className="mr-auto place-self-center lg:col-span-6 lg:px-10 xl:ml-10"
           data-aos="fade-left"
         >
           <h1
@@ -29,13 +43,14 @@ function Banner() {
               max-w-2xl text-white mb-4 text-4xl font-myfont font-medium 
               md:text-5xl xl:text-6xl
               lg:tracking-wide lg:leading-loose lg:[word-spacing:0.2rem]
-              "
+            "
           >
             Simplify Your Claims Routing
           </h1>
+
           <p
             className="max-w-2xl mb-6 text-white lg:mb-8 md:text-lg lg:text-xl font-myfont"
-            style={{ minHeight: "3rem", display: "flex", alignItems: "center" }} // fix height
+            style={{ minHeight: "3rem", display: "flex", alignItems: "center" }}
           >
             <TypeAnimation
               sequence={[
