@@ -1,5 +1,7 @@
 import React from "react";
 import aboutImage from "../../assets/images/about_image.svg";
+import IconTOuch from "../../assets/images/about_upper_logo.svg";
+
 
 function About() {
   return (
@@ -39,13 +41,27 @@ function About() {
               </p>
             </div>
           </div>
-          <img
-            className="lg:mx-0 mx-auto h-full rounded-3xl object-contain 
-             w-full max-w-[90%] 
-             lg:w-[700px] lg:h-[500px]"
-            src={aboutImage}
-            alt="about Us image"
-          />
+    <div className="relative inline-block w-full max-w-lg mx-auto">
+  {/* Main image */}
+  <img
+    className="w-full h-auto object-cover rounded-2xl"
+    src={aboutImage}
+    alt="About Us image"
+  />
+
+  {/* Floating icon overlay */}
+  <div className="absolute -top-8 -right-6  md:-top-28 md:-right-24 z-10">
+    <img
+      className="w-28 md:w-64 md:h-64 object-contain"
+      src={IconTOuch}
+      alt="App Icon"
+    />
+  </div>
+</div>
+
+
+
+       
         </div>
       </div>
     </section>

@@ -25,7 +25,7 @@ function Banner() {
             alt="mockup"
             className="animate-float"
             style={{
-              width: "81.25rem",
+              width: "60.25rem",
               position: "absolute",
               top: "6rem",
               left: "2.5rem",
@@ -54,11 +54,11 @@ function Banner() {
           >
             <TypeAnimation
               sequence={[
-                "Streamline the handling of claims with our intuitive platform.",
+                "Streamline the handling of claims.",
                 2000,
-                "Manage claims faster and smarter with our all-in-one solution.",
+                "Manage claims faster and smarter.",
                 2000,
-                "Simplify workflows and reduce hassle in every claim process.",
+                "Simplify workflows in every claims.",
                 2000,
               ]}
               wrapper="span"
