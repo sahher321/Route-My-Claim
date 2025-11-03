@@ -32,6 +32,14 @@ const App = () => {
               <section id="about">
                 <About />
               </section>
+               <div className="max-w-6xl mx-auto">
+                <h2 className="md:text-3xl text-3xl font-myfont font-medium leading-normal">
+                  Get to Know RouteMyClaims
+                </h2>
+              </div>
+              <section id="screens">
+                <AppScreensSlider />
+              </section>
               <section id="features">
                 <Features />
               </section>
@@ -40,14 +48,6 @@ const App = () => {
               </section>
               <section id="showcase">
                 <Showcase />
-              </section>
-              <div className="max-w-6xl mx-auto ">
-                <h2 className="md:text-3xl text-3xl font-myfont font-medium leading-normal">
-                  Get to Know RouteMyClaim
-                </h2>
-              </div>
-              <section id="screens">
-                <AppScreensSlider />
               </section>
               <section id="cta">
                 <Cta />

@@ -54,7 +54,7 @@ const Pricing = () => {
         {/* Header */}
         <div className="flex justify-between items-center flex-col lg:flex-row">
           <h2 className="text-3xl font-myfont font-medium  leading-normal ">
-            Subscription Model
+            Choose Your Plan
           </h2>
           {/* Billing Toggle */}
           <div className="flex justify-center items-center gap-3 mt-6">
@@ -131,7 +131,7 @@ const Pricing = () => {
                   {plan.name}
                 </h3>
 
-                <p
+                <p 
                   className={`text-5xl font-bold mt-3 text-start  font-myfont  ${
                     plan.special
                       ? "text-[#787878] group-hover:bg-gradient-to-r  font-myfont  group-hover:from-green-500 group-hover:to-blue-700 group-hover:bg-clip-text group-hover:text-transparent"

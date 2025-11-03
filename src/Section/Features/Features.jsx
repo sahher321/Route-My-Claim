@@ -7,18 +7,18 @@ import ArrowIcon from "../../assets/images/Right_arrow.svg";
 
 const features = [
   {
-    title: "Easy Uploads",
-    desc: "Quickly upload claims documents with a few clicks",
+    title: "Easy uploads",
+    desc: "Add addresses by taking a picture of a list of claims or upload from a spreadsheet",
     icon: UploadIcon,
   },
   {
     title: "Smart Scheduling",
-    desc: "Automatically assign claims to the right adjuster",
+    desc: " RouteMyClaims will automatically optimize your route by scheduling based on the distance between inspections. Paper days set by you will be automatically blocked from scheduling inspections on those days.",
     icon: ScheduleIcon,
   },
   {
     title: "Visual Calendar",
-    desc: "View and manage tasks with an interactive calendar",
+    desc: "Inspections will be displayed in a printable calendar to allow easy viewing of your daily, weekly or monthly schedule.",
     icon: CalendarIcon,
   },
 ];
@@ -27,16 +27,16 @@ function Features() {
   return (
     <section className="py-16 bg-white" data-aos="zoom-in">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 class="text-gray-900 text-3xl font-myfont font-medium leading-normal text-center mb-5">
-          RouteMyClaim Features
+        <h2 class="text-gray-900 text-3xl font-myfont font-medium leading-normal text-center mb-10 md:mb-24">
+          RouteMyClaims Features
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`cursor-pointer relative bg-gradient-to-b from-white to-gray-100 rounded-xl shadow-sm py-4 px-8 flex flex-col text-left 
-              transition-transform duration-300 hover:scale-105 hover:shadow-lg`}
+              className={`cursor-pointer relative bg-gradient-to-b from-white to-gray-100 rounded-3xl  py-4 px-8 flex flex-col text-left 
+              transition-transform duration-300 hover:scale-105 `}
             >
               {/* Icon */}
               <div className="">

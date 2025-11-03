@@ -16,7 +16,7 @@ function Cta() {
           <p className=" text-[#787878] text-lg">
             Copyright © 2025{" "}
             <a href="#" className="text-teal-500 ">
-              RouteMyClaim.
+              RouteMyClaims.
             </a>
             <br></br>
             All rights reserved.

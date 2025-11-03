@@ -54,7 +54,7 @@ const Header = () => {
           }}
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src={Logo} className="h-16" alt="RouteMyClaim Logo" />
+          <img src={Logo} className="h-16" alt="RouteMyClaims Logo" />
         </HashLink>
 
         {/* Mobile toggle button */}
