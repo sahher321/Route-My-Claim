@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../../assets/images/about_image.svg";
+import aboutImage from "../../assets/images/about_image.png";
 import IconTOuch from "../../assets/images/about_upper_logo.svg";
 
 
@@ -41,23 +41,26 @@ function About() {
               </p>
             </div>
           </div>
-    <div className="relative inline-block w-full max-w-lg mx-auto">
+ <div className="relative inline-block w-full max-w-lg mx-auto">
   {/* Main image */}
-  <img
-    className="w-full h-auto object-cover rounded-2xl"
-    src={aboutImage}
-    alt="About Us image"
-  />
+  <div className="w-full h-auto overflow-hidden rounded-2xl">
+    <img
+      className="w-full object-cover rounded"
+      src={aboutImage}
+      alt="About Us image"
+    />
+  </div>
 
   {/* Floating icon overlay */}
-  <div className="absolute -top-8 -right-6  md:-top-28 md:-right-24 z-10">
+  <div className="absolute -top-8 -right-6 md:-top-28 md:-right-24 z-10">
     <img
-      className="w-28 md:w-64 md:h-64 object-contain"
+      className="w-20 md:w-56 md:h-56 object-contain"
       src={IconTOuch}
       alt="App Icon"
     />
   </div>
 </div>
+
 
 
 
