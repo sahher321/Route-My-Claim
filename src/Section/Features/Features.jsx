@@ -26,7 +26,7 @@ const features = [
 function Features() {
   return (
     <section className="py-16 bg-white" data-aos="zoom-in">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+      <div className="max-w-6xl mx-auto text-center">
         <h2 class="text-gray-900 text-3xl font-myfont font-medium leading-normal text-center mb-10 md:mb-24">
           RouteMyClaims Features
         </h2>
@@ -35,25 +35,27 @@ function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`cursor-pointer relative bg-gradient-to-b from-white to-gray-100 rounded-3xl  py-4 px-8 flex flex-col text-left 
-              transition-transform duration-300 hover:scale-105 `}
+              className="cursor-pointer relative bg-gradient-to-b from-white to-gray-100 rounded-3xl py-6 px-8 flex flex-col text-left transition-transform duration-300 hover:scale-105"
             >
               {/* Icon */}
-              <div className="">
+              <div className="flex h-28 mb-3">
                 <img
                   src={feature.icon}
                   alt={feature.title}
-                  className="w-18 h-18"
+                  className="w-24 h-24 object-contain"
                 />
               </div>
 
-              {/* Title + Description */}
-              <h3 className="text-xl font-semibold text-gray-900 mt-3">
-                {feature.title}
-              </h3>
-              <p className="text-[#787878] text-lg leading-relaxed mb-10">
-                {feature.desc}
-              </p>
+              {/* Title + Description wrapper for equal height */}
+              <div className="min-h-[140px] flex flex-col ">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  {feature.title}
+                </h3>
+
+                <p className="text-[#787878] text-lg leading-relaxed flex-grow">
+                  {feature.desc}
+                </p>
+              </div>
 
               {/* Arrow Button */}
               <div className="absolute bottom-4 right-4 w-9 h-9 flex items-center justify-center rounded-full bg-white">

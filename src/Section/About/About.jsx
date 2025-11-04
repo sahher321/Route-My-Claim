@@ -9,7 +9,7 @@ function About() {
       class="max-w-6xl mx-auto py-[3rem] lg:pt-[17rem]  relative font-myfont"
       data-aos="fade-right"
     >
-      <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+      <div class="w-full">
         <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
           <div class="w-full flex-col justify-start items-start inline-flex">
             <h2 class="text-3xl font-myfont font-medium leading-normal text-start mb-5">

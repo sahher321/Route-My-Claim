@@ -12,9 +12,12 @@ const Pricing = () => {
       price: { monthly: 19.99, annually: 199.99 },
       claims: "Up to 50 claims per month",
       features: [
-        "Manual entry of ZIP codes or full addresses",
-        "Optimized map displaying route lines with inspection order numbers",
-        "Output: Spreadsheet-style table showing inspection order, city, and address",
+        "Manual entry of zip codes/addresses",
+        "Optimized route mapping with inspection order numbers",
+        "Output includes both:",
+        "A route map, and",
+
+        "A table showing the order of inspections (city/address + inspection number)",
       ],
       buttonColor:
         "group-hover:bg-gradient-to-r group-hover:from-green-500 group-hover:to-blue-600 bg-gray-600",
@@ -26,8 +29,8 @@ const Pricing = () => {
       claims: "Up to 100 claims per month",
       features: [
         "Includes all Basic Plan features, plus:",
-        "Prompts for starting and ending location",
-        "Displays distance between each inspection",
+        "Prompts for starting and ending locations",
+        "Shows distance between inspections",
       ],
       buttonColor:
         "group-hover:bg-gradient-to-r group-hover:from-green-500 group-hover:to-blue-600 bg-gray-600",
@@ -39,8 +42,11 @@ const Pricing = () => {
       claims: "Up to 200 claims per month",
       freeTrial: "14 days",
       features: [
-        "Includes all Standard Plan features, plus:",
-        "OCR Uploads: Users can upload photos or spreadsheets with claim data",
+        "Includes all Standard features, plus:",
+        "Uses photo or spreadsheet uploads",
+        "Calendar or table-style output options",
+
+        "“Paper Day” logic and and additional smart",
       ],
       buttonColor:
         "group-hover:bg-gradient-to-r group-hover:from-green-500 group-hover:to-blue-600 bg-gray-600",
@@ -131,7 +137,7 @@ const Pricing = () => {
                   {plan.name}
                 </h3>
 
-                <p 
+                <p
                   className={`text-5xl font-bold mt-3 text-start  font-myfont  ${
                     plan.special
                       ? "text-[#787878] group-hover:bg-gradient-to-r  font-myfont  group-hover:from-green-500 group-hover:to-blue-700 group-hover:bg-clip-text group-hover:text-transparent"

@@ -49,8 +49,8 @@ function AppScreensSlider() {
   };
 
   return (
-    <section className="py-16 bg-white font-myfont">
-      <div className="lg:max-w-[1550px]  ml-auto px-4 text-left">
+    <section className="py-16 font-myfont">
+      <div className="lg:max-w-[1550px] ml-auto px-4 text-left">
         <div className="slider-wrapper overflow-hidden">
           <Slider {...settings}>
             {screens.map((screen, idx) => (

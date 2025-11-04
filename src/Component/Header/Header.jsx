@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
-import Logo from "../../assets/images/horizontal-logo-2.svg";
+import Logo from "../../assets/images/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

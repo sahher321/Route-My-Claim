@@ -7,8 +7,8 @@ function Banner() {
   return (
     <section
       className="
-        bg-gradient-to-bl from-green-400 to-blue-600 
-        lg:bg-none lg:rounded-[3rem]
+        bg-gradient-to-bl from-green-400 to-blue-600 my-2
+        lg:bg-none rounded-[3rem]
       "
       style={{
         backgroundImage: `url(${bg_image})`,
